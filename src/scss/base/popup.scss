@@ -1,0 +1,130 @@
+body::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+.popup-show body::after {
+	opacity: 1;
+}
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px 10px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+}
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup__content {
+	display: flex;
+	flex-direction: column;
+
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	background-color: #eee;
+	padding: 20px;
+	width: 100%;
+	max-width: 900px;
+	border-radius: 20px;
+
+	font-weight: 700;
+	@include adaptiveValue("font-size", 28, 14);
+	.lock & {
+		visibility: visible;
+	}
+
+	position: relative;
+}
+.popup__close {
+	align-self: self-end;
+
+	margin: 0px 0px calc(20px / 40px * 1em) 0px;
+
+	// color: $yellowColor;
+	font-weight: 900;
+	@include adaptiveValue("font-size", 40, 20);
+
+	transition: all 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			color: $hovered-color-secondary;
+		}
+	}
+}
+
+.popup-docks {
+	// .popup-docks__header
+	&__header {
+		color: $second-bgc;
+		text-align: center;
+		@include adaptiveValue("font-size", 42, 28);
+		&:not(:last-child) {
+			// margin/font size * em
+			margin: 0px 0px calc(18px / 42px * 1em) 0px;
+		}
+	}
+	// .popup-docks__block
+	&__block {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 30, 20);
+			
+		}
+	}
+	// .popup-docks__title
+	&__title {
+		@include adaptiveValue("font-size", 36, 18);
+		&:not(:last-child) {
+			margin: 0px 0px calc(14px / 36px * 1em) 0px;
+		}
+	}
+	// .popup-docks__text
+	&__text {
+		&:not(:last-child) {
+			margin: 0px 0px calc(14px / 28px * 1em) 0px;
+		}
+	}
+}
+.popup-dock {
+	// .popup-dock__img
+	&__img {
+		padding-bottom: 56%;
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}

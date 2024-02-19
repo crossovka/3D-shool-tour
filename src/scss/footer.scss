@@ -1,0 +1,102 @@
+.footer {
+	padding: 15px 0;
+	background-color: $second-bgc;
+	color: $secondary-color;
+	@include adaptiveValue("font-size", 24, 18);
+
+	// .footer__container
+	&__container {}
+
+	// .footer__body
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+	}
+
+	// .footer__social
+	&__social {
+		@media (max-width: $mobile) {
+			&:not(:last-child) {
+				@include adaptiveValue("margin-bottom", 40, 25,);
+			}
+		}
+	}
+
+	// .footer__contacts
+	&__contacts {}
+}
+
+.social {
+
+	// .social__list
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	// .social__item
+	&__item {
+		&:not(:last-child) {
+			@include adaptiveValue("margin-right", 25, 10);
+		}
+
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $hovered-color;
+			}
+		}
+	}
+
+	// .social__link
+	&__link {
+		display: flex;
+		align-items: center;
+
+		&::before {
+			@include adaptiveValue("padding-right", 10, 5);
+		}
+	}
+}
+
+.contacts {
+
+	// .contacts__list
+	&__list {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	// .contacts__item
+	&__item {
+		display: flex;
+
+		&:not(:last-child) {
+			margin: 0 0 calc(15px / 24px * 1em) 0;
+			// margin / font size
+		}
+
+		&::before {
+			@include adaptiveValue("padding-right", 10, 5);
+		}
+
+		transition: color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $hovered-color;
+			}
+		}
+	}
+
+	// .contacts__link
+	&__link {
+		
+	}
+}

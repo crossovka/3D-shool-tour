@@ -1,0 +1,21 @@
+$main-bgc: #ececec;
+$additional-bgc: #fff;
+$second-bgc: #0c655e;
+
+$main-color: #333;
+$secondary-color: #fff;
+$highlighted-color: #15514c;
+$hovered-color: #fff764;
+$hovered-color-secondary: #0c655e;
+
+$btn-color: #0c655e;
+$btn-hovered-color: #fff;
+
+// z-index --------------------
+$ui-index--1: -1; //для наползающих элементов в потоке
+$ui-index-1: 1; //для наползающих элементов в потоке
+$ui-index-2: 2; //для наползающих элементов в потоке
+$ui-index-3: 3; //для масок
+$ui-index-4: 4; //для сайдбаров
+$ui-index-5: 5; //для модалок
+$ui-index-6: 6; //дял элементов, перекрывающих все

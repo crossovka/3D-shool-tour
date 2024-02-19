@@ -1,0 +1,42 @@
+.page {
+	&__greeting {
+		@include adaptiveValue("padding-top", 60, 30);
+		@include adaptiveValue("padding-bottom", 60, 30);
+		min-height: calc(100vh - 125px - 135px);
+		display: flex;
+		flex-direction: column;
+		justify-content: center
+	}
+}
+._page-greeting{
+	// display: flex;
+	flex: 1 1 auto;
+	// align-items: center;
+}
+.greeting {
+	// .greeting__cont
+	&__cont {
+	}
+	// .greeting__wrapper
+	&__wrapper {
+		align-items: center
+	}
+	// .greeting__slide
+	&__slide {
+		@include adaptiveValue("font-size", 140, 56);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		cursor: grab;
+	}
+
+	// .greeting__btn
+	&__btn {
+		&:not(:first-child) {
+			@include adaptiveValue("margin-top", 42, 28);
+		}
+	}
+}
+

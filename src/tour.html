@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page _page-tour">
+			<section class="page__tour tour">
+				<div class="tour__container">
+					<div class="tour__body">
+						<iframe class="tour__iframe" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0"></iframe>
+						<nav class="tour__bnt-group bnt-group">
+							<!-- <a href="#" class="bnt-group__btn btn" type="button">Инструкция</a> -->
+							<button class="bnt-group__btn btn" id="1btn" type="button">1 этаж</button>
+							<button class="bnt-group__btn btn" id="2btn" type="button">2 этаж</button>
+							<button class="bnt-group__btn btn" id="3btn" type="button">3 этаж</button>
+						</nav>
+					</div>
+					<div class="tour__btn">
+						<a class="btn" href="home.html">Оставить отзыв на школу</a>
+						<a class="btn" data-popup="#docks" href="#">Инструкция</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

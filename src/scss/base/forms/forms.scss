@@ -1,0 +1,83 @@
+//<FORM>
+// Снипет (HTML):
+.form {
+	&__title{
+		text-align: center;
+		font-weight: 700;
+	}
+	&__inputs{
+		display: flex;
+		flex-direction: column;
+
+		@include adaptiveValue("padding-top", 28, 18);
+		@include adaptiveValue("padding-bottom", 28, 18);
+	}
+	&__row {
+	}
+	&__column {
+	}
+	&__line {
+	}
+	&__input {
+		&:not(:last-child) {
+			margin: 0px 0px calc(22px / 28px * 1em) 0px;
+		}
+		&:not(:last-child) {
+			@include adaptiveValue("margin-bottom", 24, 16);
+		}
+	}
+	&__button {
+	}
+	&__error {
+		@include adaptiveValue("padding-top", 20, 10);
+
+		@include adaptiveValue("font-size", 20, 14);
+		color: red;
+		font-weight: 700;
+
+		animation: fadeInUp 0.3s ease forwards;
+	}
+	@keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			transform: translateY(-10px);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+}
+//</FORM>
+
+// <BUTTONS>
+// Снипет (HTML): btn
+// @import "button";
+
+// <INPUTS>
+// Снипет (HTML): inp
+@import "input";
+
+// <CHECK>
+// Снипет (HTML): chk
+// @import "checkbox";
+
+// <RADIO>
+// Снипет (HTML): opt
+// @import "radio";
+
+// <SELECT>
+// Снипет (HTML): sel
+// @import "select";
+
+// <RATING>
+// Снипет (HTML): rating
+// @import "rating";
+
+// <QUANTITY>
+// Снипет (HTML): qa
+// @import "quantity";
+
+// <RANGE>
+// Снипет (HTML):
+// @import "range";

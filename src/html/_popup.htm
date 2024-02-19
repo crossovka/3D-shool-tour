@@ -1,0 +1,78 @@
+<div id="form-sended" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-location"></button>
+			<div class="popup__text">
+				Ваше сообщение было успешно отправлено!
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="report" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-location"></button>
+			<form action="#" class="form" method="POST" data-ajax data-popup-message="#form-sended">
+				<h1 class="form__title"><span class="highlighted-word">Сообщить об ошибке</span></h1>
+				<div class="form__inputs">
+					<input class="form__input input email-input" type="email" autocomplete="on" name="form[]" placeholder="Ваш email"
+					data-error="Введите свой email" maxlength="40" data-required="email">
+
+					<input class="form__input input name-input" type="text" autocomplete="on" name="form[]" placeholder="Ваше имя"
+					data-error="Введите свое имя" maxlength="40" data-required="name">
+
+					<input class="form__input input message-input" type="text" autocomplete="off" name="form[]"
+					placeholder="Cобщение" maxlength="240" data-required="message" data-error="Заполните все поля">
+				</div>
+				<button class="form__button btn _fw" type="submit" class="button">Отправить</button>
+				<!-- <div class="form-wrap__contacts">
+					<a href="mailto:" aria-label="Написать нам на почту"> <span
+							class="_icon-mail"></span>email</a>
+					<a href="https://api.whatsapp.com/send?phone=" target=_blank aria-label="Написать нам в Whatsapp">
+						<span class="_icon-whatsapp"></span>whatsapp
+					</a>
+				</div> -->
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="docks" aria-hidden="true" class="popup popup-docks">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close _icon-location"></button>
+			<h4 class="popup-docks__header">
+				Инструкция по пользованию
+			</h4>
+			<div class="popup-docks__block">
+				<h5 class="popup-docks__title">
+					Навигация по сайту
+				</h5>
+				<div class="popup-dock__img -ibg">
+					<img src="@img/logo.png" alt="">
+				</div>
+				<p class="popup-docks__text">
+					Чтобы перейти на другой этаж, нажмите кнопку "2 этаж". Чтобы вернуться на первый этаж, нажмите кнопку "1
+					этаж".
+				</p>
+			</div>
+			<div class="popup-docks__block">
+				<h5 class="popup-docks__title">
+					Навигация по сайту
+				</h5>
+				<p class="popup-docks__text">
+					Чтобы перейти на другой этаж, нажмите кнопку "2 этаж". Чтобы вернуться на первый этаж, нажмите кнопку "1
+					этаж".
+				</p>
+				<p class="popup-docks__text">
+					Чтобы перейти на другой этаж, нажмите кнопку "2 этаж". Чтобы вернуться на первый этаж, нажмите кнопку "1
+					этаж".
+				</p>
+				<div class="popup-dock__img -ibg">
+					<img src="@img/logo.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

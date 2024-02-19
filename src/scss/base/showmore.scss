@@ -1,0 +1,24 @@
+[data-showmore] {
+}
+[data-showmore-content] {
+}
+[data-showmore-button] {
+	span {
+		// color: $yellowColor;
+		// @include adaptiveValue("margin-left",20, 10);
+		
+		padding: 5px;
+		font-weight: 900;
+		border-right: 1px solid $yellowColor;
+		border-left: 1px solid $yellowColor;
+		&:last-child {
+			display: none;
+		}
+		._showmore-active & {
+			display: none;
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+}
