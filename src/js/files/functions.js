@@ -217,13 +217,11 @@ export function spollers() {
 	const spollersArray = document.querySelectorAll('[data-spollers]');
 	if (spollersArray.length > 0) {
 		// Получение обычных слойлеров
-		const spollersRegular = Array.from(spollersArray).filter(function (
-			item,
-			index,
-			self
-		) {
-			return !item.dataset.spollers.split(',')[0];
-		});
+		const spollersRegular = Array.from(spollersArray).filter(
+			function (item, index, self) {
+				return !item.dataset.spollers.split(',')[0];
+			}
+		);
 		// Инициализация обычных слойлеров
 		if (spollersRegular.length) {
 			initSpollers(spollersRegular);
@@ -475,7 +473,7 @@ export function tabs() {
 				tabActiveTitle.length
 					? (tabActiveTitle = Array.from(tabActiveTitle).filter(
 							(item) => item.closest('[data-tabs]') === tabsBlock
-					  ))
+						))
 					: null;
 				tabActiveTitle.length
 					? tabActiveTitle[0].classList.remove('_tab-active')
@@ -502,16 +500,18 @@ export function menuInit() {
 		});
 
 		document
-			.querySelector('.menu__body')
-			.addEventListener('click', function (e) {
-				// Закрытие меню при клике на ссылку внутри меню
-				if (
-					e.target.closest('.menu__body a') &&
-					document.documentElement.classList.contains('menu-open')
-				) {
-					menuClose();
-				}
-			});
+		.querySelector('.menu__body')
+		.addEventListener('click', function (e) {
+			// Проверка, является ли элемент ссылкой на попап
+			if (e.target.hasAttribute('data-popup')) {
+				// Здесь можно добавить код для открытия попапа, если он еще не открыт
+				// Например, вызов функции открытия попапа:
+				// openPopup(e.target.getAttribute('data-popup'));
+			} else if (e.target.closest('.menu__body a') && document.documentElement.classList.contains('menu-open')) {
+				// Закрытие меню при клике на обычную ссылку внутри меню
+				menuClose();
+			}
+	});
 	}
 }
 export function menuOpen() {
@@ -536,13 +536,11 @@ export function showMore() {
 		let mdQueriesArray;
 		if (showMoreBlocks.length) {
 			// Получение обычных объектов
-			showMoreBlocksRegular = Array.from(showMoreBlocks).filter(function (
-				item,
-				index,
-				self
-			) {
-				return !item.dataset.showmoreMedia;
-			});
+			showMoreBlocksRegular = Array.from(showMoreBlocks).filter(
+				function (item, index, self) {
+					return !item.dataset.showmoreMedia;
+				}
+			);
 			// Инициализация обычных объектов
 			showMoreBlocksRegular.length ? initItems(showMoreBlocksRegular) : null;
 

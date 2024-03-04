@@ -2,6 +2,8 @@
 	padding: 15px 0;
 	background-color: $second-bgc;
 	color: $secondary-color;
+	font-weight: 900;
+
 	@include adaptiveValue("font-size", 24, 18);
 
 	// .footer__container
@@ -44,7 +46,6 @@
 		&:not(:last-child) {
 			@include adaptiveValue("margin-right", 25, 10);
 		}
-
 		transition: color 0.3s ease 0s;
 		@media (any-hover: hover) {
 			&:hover {

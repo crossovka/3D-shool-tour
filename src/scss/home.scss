@@ -23,7 +23,7 @@
 	}
 	// .greeting__slide
 	&__slide {
-		@include adaptiveValue("font-size", 140, 56);
+		@include adaptiveValue("font-size", 110, 56);
 
 		display: flex;
 		align-items: center;

@@ -11,6 +11,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 [class*="_icon-"] {
 	&:before {
 		@extend %ic;
@@ -21,7 +22,15 @@
 // [class^="_icon-"],
 // [class*=" _icon-"] {
 // }
-
+._icon-fullscreened:before {
+  content: "\e90a";
+}
+._icon-fullscreen:before {
+  content: "\e909";
+}
+._icon-close:before {
+  content: "\e908";
+}
 ._icon-telephone:before {
   content: "\e905";
 }

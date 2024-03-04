@@ -87,6 +87,7 @@ body::after {
 .popup-docks {
 	// .popup-docks__header
 	&__header {
+		font-weight: 900;
 		color: $second-bgc;
 		text-align: center;
 		@include adaptiveValue("font-size", 42, 28);
@@ -99,12 +100,14 @@ body::after {
 	&__block {
 		&:not(:last-child) {
 			@include adaptiveValue("margin-bottom", 30, 20);
-			
 		}
+		display: flex;
+		flex-direction: column;
 	}
 	// .popup-docks__title
 	&__title {
 		@include adaptiveValue("font-size", 36, 18);
+		font-weight: 700;
 		&:not(:last-child) {
 			margin: 0px 0px calc(14px / 36px * 1em) 0px;
 		}
@@ -117,14 +120,32 @@ body::after {
 	}
 }
 .popup-dock {
+	&__ale{
+		justify-self: center;
+		max-width: 100%;
+	}
 	// .popup-dock__img
 	&__img {
-		padding-bottom: 56%;
+		// padding-bottom: 38%;
+		// padding: 0px 0px calc(300 / 800 * 100%) 0px;
+		// // height / width
+		// &._1{
+		// 	padding: 0px 0px calc(120 / 800 * 100%) 0px;
+		// }
+		// &._2{
+		// 	padding: 0px 0px calc(200 / 800 * 100%) 0px;
+		// }
+		// &._3{
+		// 	padding: 0px 0px calc(300 / 800 * 100%) 0px;
+		// }
+		justify-self: center;
+		max-width: 100%;
+			
 		&:not(:first-child) {
-			margin-top: 20px;
+			@include adaptiveValue("margin-top", 20, 10);
 		}
 		&:not(:last-child) {
-			margin-bottom: 20px;
+			@include adaptiveValue("margin-bottom", 20, 10);
 		}
 	}
 }

@@ -52,8 +52,49 @@
 		// @include adaptiveValue("width",1102,267);
 		// flex: 1 1 auto;
 		aspect-ratio: 16/9;
+		&._fullscreen{
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 8;
+		}
 	}
+	&__frame{
+		@media (max-width: $tablet) {
+			order: 2;
+		}
+		height: 100%;
+		width: 100%;
 
+		position: relative;
+	}
+	// .tour__fullscreen
+	&__fullscreen {
+		position: absolute;
+		z-index: $ui-index-5;
+		top: 20px;
+		left: 20px;
+		// @include adaptiveValue("top", 25, 15);
+		// @include adaptiveValue("left", 25, 15);
+		// padding: 20px 0 0 20px;
+		// @include adaptiveValue("font-size", 42, 24);
+		font-size: 40px;
+		color: $btn-color;
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: lighten($btn-color, 10%);
+			}
+		}
+		&._icon-fullscreened{
+			position: fixed;
+			z-index: 9;
+			opacity: 0.8;
+			@include adaptiveValue("font-size", 28, 20);;
+		}
+	}
 	// .tour__bnt-group
 	&__bnt-group {
 		height: 100%;

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="ru_project_title"><![CDATA[New Project]]></data>
+
+
+
+  <data name="ru_pano22_title"><![CDATA[к лит, био]]></data>
+  <data name="ru_spotpoint47_tooltip"><![CDATA[Кабинет биологии]]></data>
+  <data name="ru_spotpoint48_tooltip"><![CDATA[Кабинет литературы]]></data>
+
+
+  <data name="ru_pano14_title"><![CDATA[Кабинет биологии]]></data>
+  <data name="ru_spotpoint49_tooltip"><![CDATA[Выход]]></data>
+
+
+  <data name="ru_pano15_title"><![CDATA[Кабинет истории]]></data>
+  <data name="ru_spotpoint58_tooltip"><![CDATA[Выход]]></data>
+
+
+  <data name="ru_pano16_title"><![CDATA[Кабинет литературы]]></data>
+  <data name="ru_spotpoint50_tooltip"><![CDATA[Выход]]></data>
+
+
+  <data name="ru_pano17_title"><![CDATA[Кабинет физики]]></data>
+  <data name="ru_spotpoint53_tooltip"><![CDATA[Выход]]></data>
+
+
+  <data name="ru_pano18_title"><![CDATA[Лабаратория биологии]]></data>
+  <data name="ru_spotpoint62_tooltip"><![CDATA[Выход]]></data>
+
+
+  <data name="ru_pano19_title"><![CDATA[Лабаратория химии]]></data>
+  <data name="ru_spotpoint124_tooltip"><![CDATA[Выход]]></data>
+
+
+  <data name="ru_pano20_title"><![CDATA[к био лаб]]></data>
+  <data name="ru_spotpoint61_tooltip"><![CDATA[Лабаратория биологии]]></data>
+
+
+  <data name="ru_pano21_title"><![CDATA[к ист]]></data>
+  <data name="ru_spotpoint57_tooltip"><![CDATA[Кабинет истории]]></data>
+
+
+  <data name="ru_pano23_title"><![CDATA[к физ]]></data>
+  <data name="ru_spotpoint52_tooltip"><![CDATA[Кабинет физики]]></data>
+
+
+  <data name="ru_pano24_title"><![CDATA[к хим лаб]]></data>
+  <data name="ru_spotpoint123_tooltip"><![CDATA[Лабаратория химии]]></data>
+
+
+	<data name="ru_spotmap172_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap173_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap174_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap175_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap176_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap177_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap178_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap179_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap180_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap181_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap182_tooltip"><![CDATA[]]></data>
+
+
+	<data name="ru_project_floor_title"><![CDATA[New Project]]></data>
+	<data name="ru_spotmap184_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap185_tooltip"><![CDATA[Кабинет биологии]]></data>
+	<data name="ru_spotmap186_tooltip"><![CDATA[Кабинет литературы]]></data>
+	<data name="ru_spotmap187_tooltip"><![CDATA[Кабинет физики]]></data>
+	<data name="ru_spotmap188_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap189_tooltip"><![CDATA[Кабинет истории]]></data>
+	<data name="ru_spotmap190_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap191_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap192_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap193_tooltip"><![CDATA[]]></data>
+	<data name="ru_spotmap194_tooltip"><![CDATA[]]></data>
+
+
+  <data name="ru_floorPlanmenu_label"><![CDATA[Select a floor plan]]></data>
+
+
+  <data name="ru_vr_setup_hmd0"><![CDATA[SELECT YOUR HMD]]></data>
+  <data name="ru_vr_setup_advanced"><![CDATA[ADVANCED SETTINGS]]></data>
+  <data name="ru_vr_setup_title"><![CDATA[WEB VR SETTINGS]]></data>
+  <data name="ru_vr_setup_dvn1"><![CDATA[Device:]]></data>
+  <data name="ru_vr_setup_siz1"><![CDATA[Screen size:]]></data>
+  <data name="ru_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="ru_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="ru_vr_setup_hmd3"><![CDATA[Customize]]></data>
+  <data name="ru_vr_setup_cal"><![CDATA[Calibrate gyroscope]]></data>
+  <data name="ru_vr_setup_sav"><![CDATA[SAVE]]></data>
+  <data name="ru_vr_setup_rst"><![CDATA[RESET]]></data>
+  <data name="ru_vr_setup_simple"><![CDATA[SIMPLE]]></data>
+  <data name="ru_vr_setup_cls"><![CDATA[CLOSE]]></data>
+  <data name="ru_vr_setup_m31"><![CDATA[HMD SETTINGS]]></data>
+  <data name="ru_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="ru_vr_setup_dst1"><![CDATA[Distortion:]]></data>
+  <data name="ru_vr_setup_d2tx"><![CDATA[Distortion 2:]]></data>
+  <data name="ru_vr_setup_vig1"><![CDATA[Vignette:]]></data>
+  <data name="ru_vr_setup_cac1"><![CDATA[Chromatic aberration:]]></data>
+  <data name="ru_vr_setup_olp1"><![CDATA[Overlap:]]></data>
+  <data name="ru_vr_setup_m35"><![CDATA[RETURN]]></data>
+  <data name="ru_vr_setup_cb1"><![CDATA[GYROSCOPE]]></data>
+  <data name="ru_vr_setup_cb2"><![CDATA[Place the device on a flat and[br]stable surface and tab CALIBRATE[br]to correct a gyroscope drifting.]]></data>
+  <data name="ru_vr_setup_cb3"><![CDATA[CALIBRATE]]></data>
+  <data name="ru_vr_setup_cb4"><![CDATA[RESET]]></data>
+  <data name="ru_vr_setup_cb5"><![CDATA[RETURN]]></data>
+  <data name="ru_vr_setup_cb6"><![CDATA[Calibrating...]]></data>
+  <data name="ru_vr_setup_cb7"><![CDATA[Successful calibration]]></data>
+  <data name="ru_vr_setup_cb8"><![CDATA[Calibration failed]]></data>
+  <data name="ru_vr_setup_unavailable"><![CDATA[VR mode[br]is unavailable on your device]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>

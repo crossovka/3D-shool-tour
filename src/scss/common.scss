@@ -3,10 +3,12 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.highlighted-word{
+
+._highlighted {
 	font-weight: 700;
 	color: $highlighted-color;
 }
+
 .btn {
 	display: inline-flex;
 	align-items: center;
@@ -28,9 +30,6 @@
 			background-color: $btn-color;
 			color: $btn-hovered-color;
 		}
-		&:active{
-			background-color: darken($btn-hovered-color, 10%);
-		}
 	}
 
 	&._large {
@@ -43,8 +42,21 @@
 			}
 		}
 	}
+
 	&._fw {
 		width: 100%;
+	}
+
+	&._active {
+		background-color: $btn-color;
+		color: $btn-hovered-color;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $btn-color;
+				background-color: transparent;
+			}
+		}
 	}
 
 	// &._reverse-color {

@@ -1,7 +1,7 @@
 <div id="form-sended" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close _icon-location"></button>
+			<button data-close type="button" class="popup__close _icon-close"></button>
 			<div class="popup__text">
 				Ваше сообщение было успешно отправлено!
 			</div>
@@ -12,18 +12,18 @@
 <div id="report" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close _icon-location"></button>
+			<button data-close type="button" class="popup__close _icon-close"></button>
 			<form action="#" class="form" method="POST" data-ajax data-popup-message="#form-sended">
 				<h1 class="form__title"><span class="highlighted-word">Сообщить об ошибке</span></h1>
 				<div class="form__inputs">
-					<input class="form__input input email-input" type="email" autocomplete="on" name="form[]" placeholder="Ваш email"
-					data-error="Введите свой email" maxlength="40" data-required="email">
+					<input class="form__input input email-input" type="email" autocomplete="on" name="form[]"
+						placeholder="Ваш email" data-error="Введите свой email" maxlength="40" data-required="email">
 
 					<input class="form__input input name-input" type="text" autocomplete="on" name="form[]" placeholder="Ваше имя"
-					data-error="Введите свое имя" maxlength="40" data-required="name">
+						data-error="Введите свое имя" maxlength="40" data-required="name">
 
-					<input class="form__input input message-input" type="text" autocomplete="off" name="form[]"
-					placeholder="Cобщение" maxlength="240" data-required="message" data-error="Заполните все поля">
+					<textarea class="form__input input message-input" autocomplete="off" name="form[]" placeholder="Cобщение"
+						maxlength="240" data-required="message" data-error="Заполните все поля"></textarea>
 				</div>
 				<button class="form__button btn _fw" type="submit" class="button">Отправить</button>
 				<!-- <div class="form-wrap__contacts">
@@ -41,7 +41,7 @@
 <div id="docks" aria-hidden="true" class="popup popup-docks">
 	<div class="popup__wrapper">
 		<div class="popup__content">
-			<button data-close type="button" class="popup__close _icon-location"></button>
+			<button data-close type="button" class="popup__close _icon-close"></button>
 			<h4 class="popup-docks__header">
 				Инструкция по пользованию
 			</h4>
@@ -49,29 +49,63 @@
 				<h5 class="popup-docks__title">
 					Навигация по сайту
 				</h5>
-				<div class="popup-dock__img -ibg">
-					<img src="@img/logo.png" alt="">
-				</div>
 				<p class="popup-docks__text">
-					Чтобы перейти на другой этаж, нажмите кнопку "2 этаж". Чтобы вернуться на первый этаж, нажмите кнопку "1
-					этаж".
+					Для перехода между страницами сайта используйте ссылки, расположенные в шапке страницы.
 				</p>
+				<!-- <div class="popup-dock__img -ibg_contain _1">
+					<img src="@img/docks/1.png" alt="Картинка">
+				</div> -->
+				<img class="popup-dock__img" src="@img/docks/1.png" alt="Картинка">
+				<p class="popup-docks__text">
+					Кликнув на логотип, вы попадете на приветственную страницу.
+				</p>
+				<!-- <div class="popup-dock__img -ibg_contain _2">
+					<img src="@img/docks/4.png" alt="Картинка">
+				</div> -->
+				<img class="popup-dock__img" src="@img/docks/4.png" alt="Картинка">
+				<!-- <img src="@img/docks/4.png" class="popup-docks__ale" alt="Картинка"> -->
 			</div>
 			<div class="popup-docks__block">
 				<h5 class="popup-docks__title">
-					Навигация по сайту
+					Связаться с нами
 				</h5>
 				<p class="popup-docks__text">
-					Чтобы перейти на другой этаж, нажмите кнопку "2 этаж". Чтобы вернуться на первый этаж, нажмите кнопку "1
-					этаж".
+					В нижней части сайта расположены ссылки на контактную информацию.
 				</p>
+				<!-- <div class="popup-dock__img -ibg_contain">
+					<img src="@img/docks/2.png" alt="Картинка">
+				</div> -->
+				<img class="popup-dock__img" src="@img/docks/2.png" alt="Картинка">
 				<p class="popup-docks__text">
-					Чтобы перейти на другой этаж, нажмите кнопку "2 этаж". Чтобы вернуться на первый этаж, нажмите кнопку "1
-					этаж".
+					Вы можете отправить нам сообщение об ошибке на электронную почту, нажав соответствующую кнопку.
 				</p>
-				<div class="popup-dock__img -ibg">
-					<img src="@img/logo.png" alt="">
-				</div>
+				<!-- <div class="popup-dock__img -ibg_contain">
+					<img src="@img/docks/3.png" alt="Картинка">
+				</div> -->
+				<img class="popup-dock__img" src="@img/docks/3.png" alt="Картинка">
+				<p class="popup-docks__text">
+					После ознакомления с туром вы можете пройти небольшой опрос для улучшения его качества.
+				</p>
+				<img class="popup-dock__img" src="@img/docks/7.png" alt="Картинка">
+			</div>
+			<div class="popup-docks__block">
+				<h5 class="popup-docks__title">
+					3D тур
+				</h5>
+				<p class="popup-docks__text">
+					Возможно просмотреть 3D тур в полноэкранном режиме, кликнув на соответсвующую кнопку в левом верхнем углу.
+				</p>
+				<!-- <div class="popup-dock__img -ibg -ibg_contain">
+					<img src="@img/docks/5.png" alt="Картинка">
+				</div> -->
+				<img class="popup-dock__img" src="@img/docks/6.png" alt="Картинка">
+				<p class="popup-docks__text">
+					Для навигации между этажами используйте соответствующие кнопки.
+				</p>
+				<!-- <div class="popup-dock__img -ibg -ibg_contain">
+					<img src="@img/docks/5.png" alt="Картинка">
+				</div> -->
+				<img class="popup-dock__img" src="@img/docks/5.png" alt="Картинка">
 			</div>
 		</div>
 	</div>
